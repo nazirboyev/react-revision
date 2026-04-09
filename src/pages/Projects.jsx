@@ -4,7 +4,7 @@ function Projects() {
   return (
     <>
       <h1>Projects</h1>
-      <ul>
+      <ul className="pr-ul">
         <li>
           <Link to={"/projects/stopwatch"}>1-Stopwatch</Link>
         </li>
