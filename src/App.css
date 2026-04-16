@@ -5,6 +5,14 @@
     transition: all 0.4s;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -21,7 +29,6 @@ nav .logo {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     gap: 1rem;
 }
@@ -31,7 +38,6 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
     color: #444;
     font-size: 20px;
     padding: 4px 6px;
@@ -42,28 +48,60 @@ nav ul li a:hover{
     color: #000;
 }
 
-            /* Layout style */
-.container{
-    /* border: 1px solid black; */
+/* ====   layout ===== */
+.container {
+    width: 90%;
     max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+    margin: 1rem auto;
+    text-align: center;
+}
 
+.fa-left-long {
+    color: black;
+    text-align: left !important;
 }
-.pr-ul li a{
-    text-decoration: none;
-    color: #444;
-    font-size: 20px;
-    padding: 4px 6px;
+
+.projects-wrap {
+    margin: 1rem auto;
 }
-.pr-ul{
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+
+.projects-wrap ul li a {
+    font-size: 1.4rem;
+    color: rgb(77, 77, 77);
+} 
+
+.projects-wrap ul li {
+    margin-bottom: 0.5rem;
 }
-.pr-ul li a:hover{
-    text-decoration: underline;
-    color: #000;
+
+.btn {
+    font-size: 1.2rem;
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow:  1px 2px 6px #444;
+    color: white;
+}
+
+.btn:hover {
+    box-shadow:  1px 2px 10px #444;
+}
+
+.btn-start {
+    background-color: green;
+}
+
+.btn-reset {
+    background-color: goldenrod;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.btn-stop {
+    background-color: red;
 }
