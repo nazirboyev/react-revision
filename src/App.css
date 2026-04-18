@@ -105,3 +105,69 @@ nav ul li a:hover{
 .btn-stop {
     background-color: red;
 }
+
+
+
+                /* ToDo App */
+
+.input{
+    border-radius: 6px;
+    width: 140px;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid  blue;
+}
+
+.button{
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+}
+
+
+button:hover {
+  background: darkblue;
+  color: black;
+}
+
+button:active {
+  background: red;
+  transform: scale(0.95);
+}
+
+
+input:hover {
+  background: lightblue;
+  color: white;
+}
+
+input:active {
+  background: lightgreen;
+  transform: scale(0.95);
+}
+
+.box-btn{
+    background-color: red;
+    color: white;
+    height: 35px;
+    width: 60px;
+    border-radius: 7px;
+    border: none;
+}
+
+.box{
+    border: 1px solid rgb(209, 209, 209);
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
