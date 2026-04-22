@@ -1,4 +1,4 @@
-import Header from './components/header.jsx'
+import Header from './components/Header.jsx'
 import "./App.css";
 import { Routes, Route, Link } from "react-router";
 import Home from "./pages/Home";
