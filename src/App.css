@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -107,235 +107,55 @@ nav ul li a:hover{
 }
 
 
-/* 🔥 Container */
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
-}
-
-/* 🔥 Input qismi */
-.input {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 input {
-    border: 2px solid #6c63ff;
-    border-radius: 6px;
-    height: 40px;
-    padding: 0 15px;
-    font-size: 16px;
-    outline: none;
+    border: 2px solid blue;
+    border-radius: 5px;
+    height: 4vh;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-
-input:focus {
-    border-color: #4a47d5;
-}
-
-/* 🔥 Add button */
 .input button {
-    background-color: #6c63ff;
+    background-color: rgb(201, 107, 255);
     color: white;
-    height: 40px;
-    width: 100px;
-    border-radius: 6px;
+    text-decoration: none;
+    height:33px;
+    width: 60px;
+    border-radius: 5px;
+    margin-left: 1vh;
     border: none;
     cursor: pointer;
-    transition: 0.2s;
+   
+    
 }
-
-.input button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 3px 10px #999;
-}
-
-/* 🔥 Alert */
-.alert {
-    background: #ff4d4f;
-    color: white;
-    padding: 10px;
-    margin-top: 15px;
-    border-radius: 6px;
-    text-align: center;
-}
-
-/* 🔥 Board */
-.Board {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-/* 🔥 Card */
-.BoardBox {
-    border: 1px solid #ddd;
-    width: 30%;
-    padding: 20px;
-    border-radius: 10px;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: 0.2s;
-}
-
-.BoardBox:hover {
-    transform: translateY(-5px);
-}
-
-/* 🔥 Text */
-.BoardBox h3 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-/* ✅ Completed */
-.completed {
-    text-decoration: line-through;
-    color: gray;
-}
-
-/* 🔥 Buttons umumiy */
-.BoardBox button {
+.BoardBox button  {
+    background-color: red;
     border: none;
     border-radius: 5px;
-    height: 35px;
-    width: 70px;
+    height: 4vh;
+    width: 60px;
     color: white;
-    cursor: pointer;
-    margin-right: 5px;
-    transition: 0.2s;
-}
-
-/* ✏️ Edit */
-.edit-btn {
-    background: orange;
-}
-
-/* 🗑 Delete */
-.delete-btn {
-    background: red;
-}
-
-/* 🔥 Hover effect */
-.BoardBox button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 3px 10px #999;
-}
-
-/* 🔥 Active */
-.BoardBox button:active {
-    transform: scale(0.95);
-}
-
-/* ✅ Checkbox */
-.BoardBox input[type="checkbox"] {
-    transform: scale(1.3);
+    margin-top: 15px;
     cursor: pointer;
 }
+.BoardBox h1 {
 
-/* 📱 Responsive */
-@media (max-width: 768px) {
-    .BoardBox {
-        width: 100%;
-    }
-
-    .input {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .input button {
-        width: 100%;
-    }
+    font-size: 20px;
 }
-
-.app {
-  font-family: Arial;
-  padding: 20px;
-  transition: 0.3s;
-}
-
-/* DARK MODE */
-.dark {
-  background: #111;
-  color: white;
-}
-
-/* INPUT */
-.input {
-  display: flex;
-  gap: 10px;
-  margin: 10px 0;
-}
-
-input {
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-button {
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-/* SEARCH */
-.search {
-  width: 100%;
-  margin: 10px 0;
-}
-
-/* FILTER */
-.filter-btns button {
-  margin: 5px;
-  background: #ddd;
-}
-
-/* BOARD */
-.Board {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
 .BoardBox {
-  background: white;
-  padding: 10px;
-  border-radius: 10px;
-  width: 200px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
+    border: 0.5px solid rgb(147, 132, 132);
+   width: 31%;
+    padding: 40px;
+    border-radius: 5px;
+   
+ 
+    
 
-.dark .BoardBox {
-  background: #222;
 }
-
-/* COMPLETED */
-.completed {
-  text-decoration: line-through;
-  opacity: 0.6;
-}
-
-/* ALERT */
-.alert {
-  background: red;
-  color: white;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 6px;
-}
-
-/* BUTTON COLORS */
-.edit-btn {
-  background: orange;
-  color: white;
-  margin-right: 5px;
-}
-
-.delete-btn {
-  background: red;
-  color: white;
+.Board {
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
