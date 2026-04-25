@@ -167,7 +167,8 @@ input {
 .count-container{
     border: 10px solid skyblue;
     width: 1000px;
-    height: 350px;
+    min-height: 350px;
+    max-height: 600px;
     border-radius: 10px;
     background-color: rgb(226, 248, 255);
     justify-content: center;
@@ -245,12 +246,14 @@ input {
     flex-wrap: wrap;
     align-items: center;
     gap: 15px;
+    margin-bottom: 15px;
 }
 .body-count{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 15px;
+    margin-bottom: 15px;
 }
 
 .legs-count{
@@ -258,4 +261,6 @@ input {
     flex-wrap: wrap;
     align-items: center;
     gap: 15px;
+    margin-bottom: 15px;
 }
+

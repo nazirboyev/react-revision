@@ -17,7 +17,25 @@ function CounterApp() {
                     <button className="bnt-2"><i class="fa-solid fa-circle-minus"></i></button>
                     <button className="bnt-3"><i class="fa-solid fa-trash-can"></i></button>
                 </div>
+                <div className="legs-count">
+                    <h1 className="Zero">Zero</h1>
+                    <button className="bnt-1"><i class="fa-solid fa-circle-plus"></i></button>
+                    <button className="bnt-2"><i class="fa-solid fa-circle-minus"></i></button>
+                    <button className="bnt-3"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+                <div className="legs-count">
+                    <h1 className="Zero">Zero</h1>
+                    <button className="bnt-1"><i class="fa-solid fa-circle-plus"></i></button>
+                    <button className="bnt-2"><i class="fa-solid fa-circle-minus"></i></button>
+                    <button className="bnt-3"><i class="fa-solid fa-trash-can"></i></button>
+                </div><div className="legs-count">
+                    <h1 className="Zero">Zero</h1>
+                    <button className="bnt-1"><i class="fa-solid fa-circle-plus"></i></button>
+                    <button className="bnt-2"><i class="fa-solid fa-circle-minus"></i></button>
+                    <button className="bnt-3"><i class="fa-solid fa-trash-can"></i></button>
+                </div>            
             </div>
+
         </>
     )
 }
