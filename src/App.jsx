@@ -8,6 +8,7 @@ import Stopwatch from "./pages/Stopwatch";
 import Layout from "./layouts/Layout";
 import TodoApp from "./pages/TodoApp";
 import ProjectLayout from "./layouts/ProjectLayout";
+import CounterApp from './pages/Counter.jsx';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/projects" element={<ProjectLayout />}>
             <Route path="/projects/stopwatch" element={<Stopwatch />}></Route>
             <Route path="/projects/todo" element={<TodoApp />}></Route>
+            <Route path="/projects/counter" element={<CounterApp />}></Route>
           </Route>
         </Route>
       </Routes>
