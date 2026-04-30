@@ -163,104 +163,50 @@ input {
             /* Counter App */
 
 
-
-.count-container{
-    border: 10px solid skyblue;
-    width: 1000px;
-    min-height: 350px;
-    max-height: 600px;
-    border-radius: 10px;
-    background-color: rgb(226, 248, 255);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 350px;
-    padding-right: 400px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    margin-left: 100px;
+.wrap-counter {
+  border: 10px solid #7fd8e6;
+  border-radius: 7px;
+  padding: 20px;
 }
 
-.items-number{
-    border: 1px solid skyblue;
-    background-color: skyblue;
-    border-radius: 30px;
-    width: 70px;
-    color: white;
+.fa-solid {
+  font-size: 2rem;
 }
 
-.refresh-btn{
-    background-color: green;
-    color: white;
-    border: none;
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
+.counter-items {
+  display: inline-block;
+  /* color: white; */
+  width: 80px;
+  background-color: #17a2b8;
+  border-radius: 20px;
 }
 
-.refresh2-btn{
-    background-color: rgb(44, 149, 248);
-    color: white;
-    border: none;
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
+.count {
+  display: inline-block;
+  font-size: 1.8rem;
+  /* background-color: #006bfa; */
+  color: black;
+  /* padding: 0 30px; */
 }
 
-.Zero{
-    border: 1px solid orange;
-    background-color: orange;
-    border-radius: 5px;
+.m-10 {
+  margin: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px auto;
 }
 
-.bnt-1{
-    background-color: #444;
-    color: white;
-    width: 35px;
-    height: 35px;
-    border: none;
-    border-radius: 5px;
+.m-10 i {
+  cursor: pointer;
+  color: #17a2b8;
 }
 
-.bnt-2{
-    background-color: skyblue;
-    color: white;
-    width: 35px;
-    height: 35px;
-    border: none;
-    border-radius: 5px;
+.m-10 i:hover {
+  color: #0c6c7b;
 }
 
-.bnt-3{
-    background-color: red;
-    color: white;
-    width: 35px;
-    height: 35px;
-    border: none;
-    border-radius: 5px;
+.m-10 i:active {
+  color: #444;
 }
-
-.header-count{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-.body-count{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-
-.legs-count{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-

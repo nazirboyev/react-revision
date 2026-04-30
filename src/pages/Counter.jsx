@@ -1,40 +1,94 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function CounterApp() {
-      const [count, setCount] = useState(0);
+  const [items, setItems] = useState(0);
+  const [counters, setCounters] = useState([
+    { id: 1, count: 0, added: false },
+    { id: 2, count: 0, added: false },
+    { id: 3, count: 0, added: false },
+    { id: 4, count: 0, added: false },
+  ]);
 
-  const plus = () => setCount((prev) => prev + 1);
+  const plus = (id) => {
+    let newCounters = counters.map((c) => {
+      if (c.id == id) {
+        c.count++;
+        if (!c.added) c.added = true;
+      }
+      return c;
+    });
 
-  const minus = () => {
-    if (count > 0) {
-      setCount((prev) => prev - 1);
-    }
+    setCounters(newCounters);
   };
-    
-    return(
-        <>
-            <div className="count-container wrap-counter">
-                <div className="header-count">
-                    <i className="icon" class="fa-solid fa-cart-shopping"></i>
-                    <h1 className="items-number">0</h1>
-                    <h3>Items</h3>
-                </div>
-                <div className="body-count">
-                    <button className="refresh-btn"><i class="fa-solid fa-rotate"></i></button>
-                    <button className="refresh2-btn "><i class="fa-solid fa-arrows-spin"></i></button>    
-                </div>
-                <div className="legs-count">
-                    <h1 className="Zero"><span >{count}</span></h1>
-                    <span className="count">{count}</span>
-                    <button onClick={() => plus()} className="bnt-1"><i class="fa-solid fa-circle-plus"></i></button>
-                    <button onClick={() => minus()} className="bnt-2"><i class="fa-solid fa-circle-minus"></i></button>
-                    <button className="bnt-3"><i class="fa-solid fa-trash-can"></i></button>
-                </div>         
-            </div>
 
-        </>
-    )
+  const minus = (id) => {
+    let newCounters = counters.map((c) => {
+      if (c.id == id && c.count > 0) {
+        c.count--;
+      }
+      if (c.id == id && c.count == 0) {
+        c.added = false;
+      }
+      return c;
+    });
+
+    setCounters(newCounters);
+  };
+
+  const deleteCounter = (id) => {
+    let filteredCounters = counters.filter((c) => c.id != id);
+
+    setCounters(filteredCounters);
+  };
+
+  useEffect(() => {
+    let count = 0;
+    counters.forEach((c) => {
+      if (c.count > 0) {
+        count++;
+      }
+
+      setItems(count);
+    });
+  }, [counters]);
+
+  return (
+    <>
+      <div className="container wrap-counter">
+        <h1>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span className="counter-items">{items}</span> Items
+        </h1>
+        <div className="m-10">
+          <i class="fa-solid fa-arrows-rotate"></i>
+          <i class="fa-solid fa-recycle"></i>
+        </div>
+        <div>
+          {counters.map((c) => {
+            return (
+              <div key={c.id}>
+                <span
+                  className={`count btn  ${c.count == 0 ? "btn-warning" : "btn-info"}`}
+                >
+                  {c.count == 0 ? "Zero" : c.count}
+                </span>
+                <button onClick={() => plus(c.id)} className="btn btn-start">
+                  +
+                </button>
+                <button onClick={() => minus(c.id)} className="btn btn-stop">
+                  -
+                </button>
+                <i
+                  class="fa-solid fa-trash"
+                  onClick={() => deleteCounter(c.id)}
+                ></i>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default CounterApp;
-
