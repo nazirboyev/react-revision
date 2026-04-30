@@ -199,15 +199,15 @@ input {
 
 .m-10 i {
   cursor: pointer;
-  color: #17a2b8;
+  color: black;
 }
 
 .m-10 i:hover {
-  color: #0c6c7b;
+  color: aqua;
 }
 
 .m-10 i:active {
-  color: #444;
+  color: blue;
 }
 
 .count:hover{
