@@ -186,6 +186,7 @@ input {
   font-size: 1.8rem;
   /* background-color: #006bfa; */
   color: black;
+  background-color: orange;
   /* padding: 0 30px; */
 }
 
@@ -209,4 +210,14 @@ input {
 
 .m-10 i:active {
   color: #444;
+}
+
+.count:hover{
+    background-color: white;
+    color: black;
+}
+
+.count:active{
+    background-color: black;
+    color: white;
 }
