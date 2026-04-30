@@ -9,6 +9,7 @@ function CounterApp() {
     { id: 4, count: 0, added: false },
   ]);
 
+
   const plus = (id) => {
     let newCounters = counters.map((c) => {
       if (c.id == id) {
@@ -41,6 +42,26 @@ function CounterApp() {
     setCounters(filteredCounters);
   };
 
+  const resetAll = () => {
+    const resetCounters = counters.map((c) => ({
+      id: c.id,
+      count: 0,
+      added: false,
+    }));
+
+    setCounters(resetCounters);
+  };
+
+  const recoverAll = () => {
+    if(counters.length === 0) {
+      setCounters([
+    { id: 1, count: 0, added: false },
+    { id: 2, count: 0, added: false },
+    { id: 3, count: 0, added: false },
+    { id: 4, count: 0, added: false },
+      ]);
+    }
+  };
 
   useEffect(() => {
     let count = 0;
@@ -61,8 +82,16 @@ function CounterApp() {
           <span className="counter-items">{items}</span> Items
         </h1>
         <div className="m-10">
-          <i class="fa-solid fa-arrows-rotate"></i>
-          <i class="fa-solid fa-recycle"></i>
+          <i className={`fa-solid fa-arrows-rotate ${
+             items > 0 ? "active" : "inactive"
+          }`}
+          
+          onClick={resetAll}></i>
+          <i className={`fa-solid fa-recycle ${
+            counters.length == 0 ? "active" : "inactive"
+          }`} 
+          
+          onClick={recoverAll}></i>
         </div>
         <div>
           {counters.map((c) => {
