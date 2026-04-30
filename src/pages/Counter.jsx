@@ -41,6 +41,7 @@ function CounterApp() {
     setCounters(filteredCounters);
   };
 
+
   useEffect(() => {
     let count = 0;
     counters.forEach((c) => {

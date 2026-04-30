@@ -16,7 +16,7 @@ a {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: lightblue;
+    background-color: rgb(0, 54, 71);
     align-items: center;
     padding: 1rem 2rem;
 }
@@ -26,6 +26,7 @@ nav .logo {
     font-weight: 600;
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
+    color: aqua;
 }
 
 nav ul {
@@ -41,11 +42,12 @@ nav ul li a {
     color: #444;
     font-size: 20px;
     padding: 4px 6px;
+    color: aquamarine;
 }
 
 nav ul li a:hover{
     text-decoration: underline;
-    color: #000;
+    color: gold;
 }
 
 /* ====   layout ===== */
@@ -148,10 +150,6 @@ input {
    width: 31%;
     padding: 40px;
     border-radius: 5px;
-   
- 
-    
-
 }
 .Board {
     display: flex;
@@ -162,11 +160,11 @@ input {
 
             /* Counter App */
 
-
 .wrap-counter {
   border: 10px solid #7fd8e6;
   border-radius: 7px;
   padding: 20px;
+  background-color: lightgoldenrodyellow;
 }
 
 .fa-solid {
