@@ -221,3 +221,23 @@ input {
     background-color: black;
     color: white;
 }
+
+.btn-start:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn-stop:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn-stop:active{
+    background-color: darkred;
+    color: white;
+}
+
+.btn-start:active{
+    background-color: darkgreen;
+    color: white;
+}
