@@ -9,6 +9,7 @@ import Layout from "./layouts/Layout";
 import TodoApp from "./pages/TodoApp";
 import ProjectLayout from "./layouts/ProjectLayout";
 import CounterApp from './pages/Counter.jsx';
+import WaetherApp from './pages/WeatherApp.jsx';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
             <Route path="/projects/stopwatch" element={<Stopwatch />}></Route>
             <Route path="/projects/todo" element={<TodoApp />}></Route>
             <Route path="/projects/counter" element={<CounterApp />}></Route>
+            <Route path="/projects/weather" element={<WaetherApp />}></Route>
+           
           </Route>
         </Route>
       </Routes>
