@@ -16,7 +16,7 @@ function Projects() {
             <Link to={"/projects/counter"}>3-Counter App</Link>
           </li>
           <li>
-            <Link to={"/projects/waether"}>4 Waether App</Link>
+            <Link to={"/projects/weather"}>4 Waether App</Link>
           </li>
         </ul>
       </div>

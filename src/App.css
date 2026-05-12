@@ -245,5 +245,24 @@ input {
 
 
 .weather-container{
-    border: 1px solid black;
+    border: 1px solid #000000;
+    width: 800px;
+    height: 400px;
+    margin-left: 150px;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.input-weather{
+    border-color: blue;
+}
+
+.btn-weather{
+    width: 60px;
+    height: 36px;
+    margin: 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: red;
+    color: white;
 }

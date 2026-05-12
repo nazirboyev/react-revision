@@ -1,11 +1,23 @@
+const API_KEY = "d0ce3d24f8ac43671f3d2b542ee4408a"
+
+const CURRENT_GEOLOCATION
+
+navigator.geolocation.getCurrentPosition((position))
+
 function WaetherApp() {
     return (
         <>
             <div className="weather-container">
-                    <h1>Weather</h1>
+                    <div className="header">
+                        <input className="input-weather" type="text" placeholder="Enter city name" />
+                        <button className="btn-weather">Search</button>
+                    </div>
+                    <div className="body">
+                        <h1>33C</h1>
+                    </div>
             </div>
         </>
-    )
+    )                   
 }
 
 export default WaetherApp;
