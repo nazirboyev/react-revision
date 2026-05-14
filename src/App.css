@@ -249,6 +249,7 @@ input {
   border-radius: 20px;
   min-height: 300px;
   padding: 10px;
+  background-image: url(https://stock.adobe.com/search?k=sunny+sky);
 }
 
 .w-search input, .w-search button {
