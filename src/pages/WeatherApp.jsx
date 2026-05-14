@@ -1,8 +1,7 @@
-const API_KEY = "d0ce3d24f8ac43671f3d2b542ee4408a"
+// const API_KEY = "d0ce3d24f8ac43671f3d2b542ee4408a"
 
-const CURRENT_GEOLOCATION
 
-navigator.geolocation.getCurrentPosition((position))
+// navigator.geolocation.getCurrentPosition((position))
 
 function WaetherApp() {
     return (
@@ -13,7 +12,7 @@ function WaetherApp() {
                         <button className="btn-weather">Search</button>
                     </div>
                     <div className="body">
-                        <h1>33C</h1>
+                        <h1 className="gradus">33C</h1>
                     </div>
             </div>
         </>
